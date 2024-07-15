@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO REGISTRO E INICIO DE SESION</title>
+    <link rel="stylesheet" href="/css/estilosLogin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    
+    </head>
+<body>
+    <div class="container-form registrer">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+                <input type="button" value="Iniciar sesion" id="sign-in">
+                <!-- Input es para boton -->
+            </div>
+        </div>
+    <div class="form-information">
+        <div class="form-information-childs">
+            <h2>Crear una Cuenta</h2>
+            <div class="icons">
+                <i class='bx bxl-google'></i>
+                <i class='bx bxl-facebook-circle' ></i>
+                <i class='bx bxl-gmail' ></i>
+            </div>
+            <p>o usa tu email para registrarte</p>
+            <form class="form">
+                <select id="estado" name="estado" required>
+                    <option value="">Tipo documento</option>
+                    <option value="Operativo">Cedula ciudadania</option> 
+                    <option value="Operativo">Cedula extranjeria</option> 
+                   </select>
+                <label class="etiqueta2">
+                    <input type="text" placeholder="Número documento">
+                </label>
+                <label class="etiqueta2">
+                    <input type="text" placeholder="Nombre Completo">
+                </label>
+                <label>
+                    <input type="text" placeholder="Apellidos">    
+                </label>
+                <label>
+                    <input type="email" placeholder="Correo Electronico">
+                </label>
+                <label>
+                    <input type="password" placeholder="Ingrese la contraseña">
+                </label>
+                <label>
+                    <input type="password" placeholder="Confirmar la contraseña">
+                </label>
+                <select id="ROL" name="ROL" required>
+                    <option value="">Rol</option>
+                    <option value="Operativo">Secretaria</option> 
+                    <option value="Operativo">Administrador</option> 
+                   </select>
+                <input type="submit" value="Registrarse">
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-form login hide">
+    <div class="information">
+        <div class="info-childs">
+            <h2>¡Bienvenido nuevamente!</h2>
+            <p>Si aún no tienes cuenta por favor registrate aqui</p>
+            <input type="button" value="Registrarse" id="sign-up">
+            <!-- Input es para boton -->
+        </div>
+    </div>
+<div class="form-information">
+    <div class="form-information-childs">
+        <h2>Iniciar sesión</h2>
+        <div class="icons">
+            <i class='bx bxl-google'></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-gmail'></i>
+            </div>
+            <p>o iniciar sesión con una cuenta</p>
+            <form class="form">
+                <label>
+                    <i class='bx bxs-user'></i>
+                    <input type="text" placeholder="Ingrese su documento">
+                </label>
+                <label>
+                    <i class='bx bx-lock-alt'></i>
+                    <input type="password" placeholder="Ingrese la contraseña">
+                </label>          
+                <a href="/html/indexcarucel.html">
+                    <button type="button" class="sesion">Iniciar sesión</button>
+                </a>
+            </form>
+            </div>
+            </div>
+            </div>
+            <script src="/js/funcionalLogin.js"></script>
+            </body>
+            
+            </html>

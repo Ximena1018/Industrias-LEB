@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cliente</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/css/cliente.css">
+</head>
+<body>
+    <div class="margen"><img src="/imagenes/Industtrias.png" alt="" width="1535px" height="100px"></div>
+    
+    <a class="volver" href="/html/indexcarucel.html"><img src="/imagenes/logo leb.png" alt="" width="120px" height="100px" ></a>
+  <nav class="navegardor">
+    <a href="/html/Usuario.html">
+        <img class="login" src="/iconos/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50px" height="50px">
+    </a>
+    <ul class="redirecciones .redirecciones_visible">
+        <li class="Item-menu">
+            <a href="/html/OrdenTrabajo.html" class="link-menu-redireccion nav-link">Orden Trabajo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/actividad.html" class="link-menu-redireccion nav-link">Actividad</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/facturacion.html" class="link-menu-redireccion nav-link">Facturación</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/maquina.html" class="link-menu-redireccion nav-link">Maquinaria</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/operario.html" class="link-menu-redireccion nav-link">Operario</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/insumo-proveedor.html" class="link-menu-redireccion nav-link">Proveedor-Insumo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/cliente.html" class="link-menu-redireccion nav-link">Clientes</a>
+        </li>
+    </ul>
+</nav>
+<div class="container">
+    <form class="login-form">
+        <h1>Cliente</h1>
+        <div class="form-left">
+            <div class="form-group">
+                <img src="/imagenees/person_24dp_314D1C_FILL0_wght400_GRAD0_opsz24.png" height="20px" >
+                <label for="nombre">Nombre Completo:</label>
+                
+                <input type="text" id="nombre" name="nombre" required>
+                
+            </div>
+            
+            
+            
+            <div class="form-group">
+                <img src="/imagenees/assignment_ind_24dp_314D1C_FILL0_wght400_GRAD0_opsz24.png" height="20px" >
+            <label for="tipo-documento">Tipo de Documento:</label>
+                <select id="tipo-documento" name="tipo-documento" required>
+                    <option value="dni">-</option>
+                    <option value="dni">Cédula Ciudadania</option>
+                    <option value="pasaporte">Cedula Extranjería</option>
+                    <option value="cedula">Pasaporte</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <img src="/imagenees/icono2.png" height="20px" >
+                <label for="documento">Documento:</label>
+                <input type="text" id="documento" name="documento" required>
+            </div>
+            
+            <div class="form-group">
+                <img src="/imagenees/mail_24dp_314D1C_FILL0_wght400_GRAD0_opsz24.png" height="20px" >
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            
+            <div class="form-group">
+                <img src="/imagenees/pin_drop_24dp_314D1C_FILL0_wght400_GRAD0_opsz24.png" height="20px" >
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            
+            <div class="form-group">
+                <img src="/imagenees/settings_phone_24dp_314D1C_FILL0_wght400_GRAD0_opsz24.png" height="20px" >
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+        </div>
+        
+        <div class="form-right">
+            <div class="button-group">
+                <button type="button" class="button-modify">Modificar</button>
+                <button type="submit" class="button-save">Guardar</button>
+                <button type="button" class="button-delete">Eliminar</button>
+            </div>
+        </div>
+    </form>
+</div>
+  
+  <div class="margen1"><img src="/imagenes/Industtrias.png" alt="" width="1550px" height="400px"></div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="/css/Usuario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <header class="header"> -->
+        <div class="margen">
+            <img src="/imagenes/Industtrias.png" alt="" width="1535px" height="100px">
+        </div>
+        <a class="volver" href="/html/indexcarucel.html">
+            <img src="/imagenes/logo leb.png" alt="" width="120px" height="100px">
+        </a>
+        <nav class="navegador">
+            <a href="/html/Usuario.html">
+                <img class="login" src="/iconos/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50px" height="50px">
+            </a>
+            <ul class="redirecciones">
+                <li class="item-menu">
+                    <a href="/html/OrdenTrabajo.html" class="link-menu-redireccion">Orden Trabajo</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/html/actividad.html" class="link-menu-redireccion">Actividad</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/html/facturacion.html" class="link-menu-redireccion">Facturación</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/html/maquina.html" class="link-menu-redireccion">Maquinaria</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/html/operario.html" class="link-menu-redireccion">Operario</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/html/insumo-proveedor.html" class="link-menu-redireccion">Proveedor-Insumo</a>
+                </li>
+                <li class="item-menu">
+                    <a href="/html/cliente.html" class="link-menu-redireccion">Clientes</a>
+                </li>
+            </ul>
+        </nav>
+    <!-- </header> -->
+
+    <div class="containerFormulario">
+        <div class="persona">
+            <img src="/iconos/account_circle_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="200px" height="200px">
+        </div>
+
+        <form action="">
+            <label for="primerNombre">Primer Nombre</label>
+            <input class="formulario" type="text" id="primerNombre" name="primerNombre" placeholder="Ingrese su primer nombre">
+
+            <label for="segundoNombre">Segundo Nombre</label>
+            <input class="formulario" type="text" id="segundoNombre" name="segundoNombre" placeholder="Ingrese su segundo nombre">
+
+            <label for="primerApellido">Primer Apellido</label>
+            <input class="formulario" type="text" id="primerApellido" name="primerApellido" placeholder="Ingrese su primer apellido">
+
+            <label for="segundoApellido">Segundo Apellido</label>
+            <input class="formulario" type="text" id="segundoApellido" name="segundoApellido" placeholder="Ingrese su segundo apellido">
+
+            <label for="email">Correo Electrónico</label>
+            <input class="formulario" type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
+
+            <label for="tipoDocumento">Tipo de Documento</label>
+            <select id="tipoDocumento" class="formulario">
+                <option value="" disabled selected>Seleccione un tipo de documento</option>
+                <option value="Secretario">Secretario</option>
+                <option value="Jefe">Jefe</option>
+            </select>
+
+            <label for="rh">RH</label>
+            <input class="formulario" type="text" id="rh" name="rh" placeholder="Ingrese su RH">
+
+            <label for="arl">ARL</label>
+            <input class="formulario" type="text" id="arl" name="arl" placeholder="Ingrese su ARL">
+
+            <label for="eps">EPS</label>
+            <input class="formulario" type="text" id="eps" name="eps" placeholder="Ingrese su EPS">
+
+            <div class="botones">
+                <button class="boton" type="button">Agregar</button>
+                <button class="boton" type="button">Buscar</button>
+                <button class="boton" type="button">Modificar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="margen1">
+        <img src="/imagenes/Industtrias.png" alt="" width="1550px" height="400px">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Contenido del footer si lo tienes -->
+    </footer>
+</body>
+</html>

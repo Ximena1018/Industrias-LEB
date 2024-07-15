@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Maquinaria</title>
+  <link rel="stylesheet" href="/css/maquina.css">
+</head>
+<body>
+  <div class="margen"><img src="/imagenes/Industtrias.png" alt="" width="1535px" height="100px"></div>
+    
+    <a class="volver" href="/html/indexcarucel.html"><img src="/imagenes/logo leb.png" alt="" width="120px" height="100px" ></a>
+  <nav class="navegardor">
+    <a href="/html/Usuario.html">
+        <img class="login" src="/iconos/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50px" height="50px">
+    </a>
+    <ul class="redirecciones .redirecciones_visible">
+        <li class="Item-menu">
+            <a href="/html/OrdenTrabajo.html" class="link-menu-redireccion nav-link">Orden Trabajo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/actividad.html" class="link-menu-redireccion nav-link">Actividad</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/facturacion.html" class="link-menu-redireccion nav-link">Facturación</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/maquina.html" class="link-menu-redireccion nav-link">Maquinaria</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/operario.html" class="link-menu-redireccion nav-link">Operario</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/insumo-proveedor.html" class="link-menu-redireccion nav-link">Proveedor-Insumo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/cliente.html" class="link-menu-redireccion nav-link">Clientes</a>
+        </li>
+    </ul>
+</nav>
+<div class="margen1"><img src="/imagenes/Industtrias.png" alt="" width="1550px" height="400px"></div>
+
+  <form id="formulario">
+    <h1 class="titulo">Registro de Maquinaria</h1>
+    <label for="numeroMaquina">  
+    <img src="/Imagenes1/excavador .png" alt=""> Número de Máquina:</label>
+    <input type="text" id="numeroMaquina" name="numeroMaquina" required><br>
+    <label for="Nombremaquinaria">
+      <img src="/Imagenes1/nombreMaquina.png" alt=""> Nombre Maquinaria:</label>
+    <input type="text" id="Nombremaquinaria" name="Nombremaquinaria" required><br>
+
+    <label for="estado">
+    <img src="/Imagenes1/senal-de-alerta.png" alt="">    Estado:</label>
+    <select class="formulario2" id="estado" name="estado" required>
+      <option value="">Seleccione...</option>
+      <option value="Operativo">Operativo</option>
+      <option value="Mantenimiento">Mantenimiento</option>
+      <option value="Fuera de Servicio">Fuera de Servicio</option>
+    </select><br>
+
+    <label for="funcion"><img src="/Imagenes/configuraciones.png" alt="">   Función:</label>
+    <input type="text" id="funcion" name="funcion" required><br>
+
+    <label for="descripcion"><img src="/Imagenes1/descripcion.png" alt="">   Descripción:</label>
+    <textarea id="descripcion" name="descripcion" rows="5" cols="30" required></textarea><br>
+
+    <button type="submit">Registrar</button>
+    <button type="submit">Buscar</button>
+    <button type="submit">Modificar</button>
+    <button type="submit">Eliminar</button>
+  </form>
+
+  <div id="mensajes"></div>
+  <script src="maquina.js"></script>
+</body>
+</html>

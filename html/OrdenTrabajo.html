@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orden Trabajo</title>
+    <link rel="stylesheet" href="/css/OrdenTrabajo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="margen"><img src="/imagenes/Industtrias.png" alt="" width="1535px" height="100px"></div>
+    <div class="cuadro"></div>
+    <!--<div class="tex1">Registro Orden Trabajo</div>-->
+    <a class="volver" href="/html/indexcarucel.html"><img src="/imagenes/logo leb.png" alt="" width="120px" height="100px" ></a>
+    <header class="header">
+        <nav class="navegardor">
+            <a href="/html/Usuario.html">
+                <img class="login" src="/iconos/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50px" height="50px">
+            </a>
+            <ul class="redirecciones .redirecciones_visible">
+                <li class="Item-menu">
+                    <a href="/html/OrdenTrabajo.html" class="link-menu-redireccion nav-link">Orden Trabajo</a>
+                </li>
+                <li class="Item-menu">
+                    <a href="/html/actividad.html" class="link-menu-redireccion nav-link">Actividad</a>
+                </li>
+                <li class="Item-menu">
+                    <a href="/html/facturacion.html" class="link-menu-redireccion nav-link">Facturación</a>
+                </li>
+                <li class="Item-menu">
+                    <a href="/html/maquina.html" class="link-menu-redireccion nav-link">Maquinaria</a>
+                </li>
+                <li class="Item-menu">
+                    <a href="/html/operario.html" class="link-menu-redireccion nav-link">Operario</a>
+                </li>
+                <li class="Item-menu">
+                    <a href="/html/insumo-proveedor.html" class="link-menu-redireccion nav-link">Proveedor-Insumo</a>
+                </li>
+                <li class="Item-menu">
+                    <a href="/html/cliente.html" class="link-menu-redireccion nav-link">Clientes</a>
+                </li>
+            </ul>
+        </nav>
+      </header>
+      <div class="margen1"><img src="/imagenes/Industtrias.png" alt="" width="1550px" height="400px"></div>
+
+        <div class="containerFormulario">
+            <div class="tituulo">Orden de Trabajo</div>
+            <label for="doc">Tipo Documento:</label>
+        <select class="Formulario1" id="tipo-documento">
+            <option value="Seleccione">-</option>
+            <option value="cc">Cedula Ciudadania</option>
+            <option value="ce">Cedula Extrangeria</option>
+            <option value="pasaporte">Pasaporte</option>
+        </select><br><br>
+        <label for="num doc"> Numero Documento:</label>
+        <input class="formulario" type="numDocumento" name="numeroDocumento" placeholder="Numero Documento"><br><br>
+        <label for="doc">Nombre cliente:</label>
+        <input class="formulario" type="NombreCliente" name="nombrecliente" placeholder="Nombre Cliente"><br><br>
+        <label for="doc">Nombre Operario:</label>
+        <input class="formulario" type="nombreOperario" name="nombreOperario" placeholder="Nombre Operario"><br><br>
+        <label for="doc">Fecha Inicio:</label>
+        <input class="formulario" type="date" name="FechaInicio" id="" placeholder="Fecha Inicio"><br><br>
+        <label for="doc">Fecha Finalización:</label>
+        <input class="formulario" type="date" name="FechaFin" placeholder="Fecha Finalización">
+        <label for="doc">Estado:</label>
+        <select class="Formulario1" id="Estado">
+            <option value="Seleccione">-</option>
+            <option value="En espera">En espera</option>
+            <option value="Proceso">Proceso</option>
+            <option value="Mecanizado">Mecanizado</option>
+            <option value="Finalizado">Finalizado</option>
+            <option value="En pausa">En pausa</option>
+        </select>
+        <label for="doc">Lugar de servicio:</label>
+        <select class="Formulario1" id="Servicio">
+            <option value="Seleccione">-</option>
+            <option value="Industrias leb">Industrias Leb</option>
+            <option value="domicilio">Domicilio</option>
+        </select><br><br>
+        <label for="doc">Dirección:</label>
+        <input class="formulario" type="addres" name="Direccion" placeholder="Direccion" id=""><br><br>
+        <label for="doc">Descripción:</label>
+        <textarea class="Formulario2" id="descripcion" name="descripcion" placeholder="Descripción" rows="5" cols="30" required></textarea><br><br>
+        <label for="doc">Valor:</label>
+        <input class="formulario" type="valor" name="Costo" placeholder="Valor" id="">
+        <label for="doc">Maquina:</label>
+        <select class="Formulario1" id="Maquina">
+            <option value="Seleccione">-</option>
+            <option value="M1">M1</option>
+            <option value="M2">M2</option>
+        </select><br><br>
+        <label for="doc">Insumo:</label>
+        <input class="formulario" type="Insumos" name="Insumo" placeholder="Insumos" id=""><br><br>
+        <label for="doc">Repuesto:</label>
+        <input class="formulario" type="repuestos" name="Repuestos" placeholder="Repuestos" id=""><br><br>
+        <div class="form-group">
+            <button class="botoon" type="button" onclick="listar()">Listar</button>
+            <button class="botoon" type="button" onclick="mostrar()">Actualizar</button>
+            <button class="botoon" type="button" onclick="modificar()">Modificar</button>
+            <button class="botoon" type="submit">Guardar</button>
+          </div>
+    </div>
+          
+    
+      <!-- <script src="/js/ordenTRabajo.js"></script> -->
+        
+     
+</body>
+</html>

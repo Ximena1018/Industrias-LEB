@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento de Facturación</title>
+  <link rel="stylesheet" href="/CSS/facturacion.css">
+  <script src="/JAVASCRIPT/facturacion.js"></script>
+</head>
+<body>
+  <div class="margen"><img src="/imagenes/Industtrias.png" alt="" width="1535px" height="100px"></div>
+  <a class="volver" href="/html/indexcarucel.html"><img src="/imagenes/logo leb.png" alt="" width="120px" height="100px" ></a>
+  <nav class="navegardor">
+    <a href="/html/Usuario.html">
+        <img class="login" src="/iconos/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50px" height="50px">
+    </a>
+    <ul class="redirecciones .redirecciones_visible">
+        <li class="Item-menu">
+            <a href="/html/OrdenTrabajo.html" class="link-menu-redireccion nav-link">Orden Trabajo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/actividad.html" class="link-menu-redireccion nav-link">Actividad</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/facturacion.html" class="link-menu-redireccion nav-link">Facturación</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/maquina.html" class="link-menu-redireccion nav-link">Maquinaria</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/operario.html" class="link-menu-redireccion nav-link">Operario</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/insumo-proveedor.html" class="link-menu-redireccion nav-link">Proveedor-Insumo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/cliente.html" class="link-menu-redireccion nav-link">Clientes</a>
+        </li>
+    </ul>
+</nav>
+<div class="margen1"><img src="/imagenes/Industtrias.png" alt="" width="1550px" height="400px"></div>
+
+  <div class="container">
+    <h1 class="titulo">Seguimiento de Facturación</h1>
+    <form id="facturaForm" class="formulario">
+      <div class="form-group">
+        <label for="fecha">
+          <img src="/iconos/icono1.png" alt="Icono Fecha"> Fecha:
+        </label>
+        <input type="date" id="fecha" name="fecha">
+      </div>
+      <div class="form-group">
+        <label for="documento">
+          <img src="/iconos/icono2.png" alt="Icono Documento"> Documento del Cliente:
+        </label>
+        <input type="text" id="documento" name="documento">
+      </div>
+      <div class="form-group">
+        <label for="nombre">
+          <img src="/iconos/icono3.png" alt="Icono Nombre"> Nombre del Cliente:
+        </label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div class="form-group">
+        <label for="valorTotal">
+          <img src="/iconos/icono4.png" alt="Icono Valor"> Valor Total:
+        </label>
+        <input type="valortotal" id="valorTotal" name="valorTotal" step=" " >
+      </div>
+      <div class="form-group">
+        <label for="numAbonos">
+          <img src="/iconos/icono5.png" alt="Icono Abonos"> Número de Abonos:
+        </label>
+        <input type="numerodeabonos" id="valorAbono" name="Abono" step=" " >
+      </div>
+      <div class="form-group">
+        <label for="valorAbono">
+          <img src="/iconos/icono5.png" alt="Icono Valor Abono"> Valor del Abono:
+        </label>
+        <input type="valorabono" id="valorAbono" name="valorAbono" step=" " >
+      </div>
+      <div class="form-group">
+        <label for="numAbonos">
+          <img src="/iconos/icono5.png" alt="Icono Abonos"> Número de Abonos:
+        </label>
+        <select id="numAbonos" class="numAbonos" name="numAbonos">
+          <option value="0">- </option>
+          <option value="0">Pago De Contado </option>
+          <option value="1">abono a 15 </option>
+          <option value="2">abono a 30 dias</option>
+          <option value="3">abono a 60 dias</option>
+        </select>
+      </div>
+
+      <div class="btn">
+        <button type="button" onclick="listar()">Listar</button>
+        <button type="button" onclick="modificar()">Modificar</button>
+        <button type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Proveedor e Insumo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/insumo.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">Proveedor e Insumo</h1>
+    <div class="formularios">
+      <form id="proveedorForm" class="formulario">
+        <div class="form-group">
+          <h2><i class="material-icons">business</i> Información Proveedor</h2>
+          <label for="razon-social"><i class="material-icons">badge</i> Razón Social</label>
+          <input type="text" id="razon-social"><br><br>
+          <label for="tipo-documento"><i class="material-icons">description</i> Tipo de Documento</label>
+          <select id="tipo-documento">
+              <option value="CI">CC</option>
+              <option value="NIT">NIT</option>
+              <option value="pasaporte">Pasaporte</option>
+          </select><br><br>
+          <label for="numero-documento"><i class="material-icons">confirmation_number</i> Número de Documento</label>
+          <input type="text" id="numero-documento"><br><br>
+          <label for="telefono"><i class="material-icons">phone</i> Número de Teléfono</label>
+          <input type="text" id="telefono"><br><br>
+          <label for="email"><i class="material-icons">email</i> Correo Electrónico</label>
+          <input type="email" id="email">
+        </div>
+      </form>
+      <form id="insumoForm" class="formulario">
+        <div class="form-group">
+          <h2><i class="material-icons">inventory_2</i> Información Insumo</h2>
+          <label for="tipo-insumo"><i class="material-icons">category</i> Tipo de Insumo</label>
+          <input type="text" id="tipo-insumo"><br><br>
+          <label for="cantidad"><i class="material-icons">format_list_numbered</i> Cantidad</label>
+          <input type="number" id="cantidad"><br><br>
+          <label for="valor"><i class="material-icons">attach_money</i> Valor</label>
+          <input type="text" id="valor"><br><br>
+          <label for="marca"><i class="material-icons">branding_watermark</i> Marca</label>
+          <input type="text" id="marca"><br><br>
+          <label for="unidad-medida"><i class="material-icons">straighten</i> Unidad de Medida</label>
+          <input type="text" id="unidad-medida">
+        </div>
+      </form>
+    </div>
+    <div class="buttons">
+      <button type="button" onclick="validarYAgregarInventario()">AGREGAR</button>
+      <button type="button">BUSCAR</button>
+      <button type="button">MODIFICAR</button>
+      <a href="inventario.html" class="ver-inventario"><button type="button">VER INVENTARIO</button></a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <div class="margen"><img src="/imagenes/Industtrias.png" alt="" width="1535px" height="100px"></div>
+    
+  <a class="volver" href="/html/indexcarucel.html"><img src="/imagenes/logo leb.png" alt="" width="120px" height="100px" ></a>
+  <nav class="navegardor">
+    <a href="/html/Usuario.html">
+        <img class="login" src="/iconos/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50px" height="50px">
+    </a>
+    <ul class="redirecciones .redirecciones_visible">
+        <li class="Item-menu">
+            <a href="/html/OrdenTrabajo.html" class="link-menu-redireccion nav-link">Orden Trabajo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/actividad.html" class="link-menu-redireccion nav-link">Actividad</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/facturacion.html" class="link-menu-redireccion nav-link">Facturación</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/maquina.html" class="link-menu-redireccion nav-link">Maquinaria</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/operario.html" class="link-menu-redireccion nav-link">Operario</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/insumo-proveedor.html" class="link-menu-redireccion nav-link">Proveedor-Insumo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/cliente.html" class="link-menu-redireccion nav-link">Clientes</a>
+        </li>
+    </ul>
+</nav>
+<div class="margen1"><img src="/imagenes/Industtrias.png" alt="" width="1535px" height="400px"></div>
+</body>
+</html>

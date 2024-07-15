@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Orden de Trabajo</title>
+    <link rel="stylesheet" href="/css/actividad.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="margen"><img src="/imagenes/Industtrias.png" alt="" width="1535px" height="100px"></div>
+    
+    <a class="volver" href="/html/indexcarucel.html"><img src="/imagenes/logo leb.png" alt="" width="120px" height="100px" ></a>
+  <nav class="navegardor">
+    <a href="/html/Usuario.html">
+        <img class="login" src="/iconos/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="50px" height="50px">
+    </a>
+    <ul class="redirecciones .redirecciones_visible">
+        <li class="Item-menu">
+            <a href="/html/OrdenTrabajo.html" class="link-menu-redireccion nav-link">Orden Trabajo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/actividad.html" class="link-menu-redireccion nav-link">Actividad</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/facturacion.html" class="link-menu-redireccion nav-link">Facturación</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/maquina.html" class="link-menu-redireccion nav-link">Maquinaria</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/operario.html" class="link-menu-redireccion nav-link">Operario</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/insumo-proveedor.html" class="link-menu-redireccion nav-link">Proveedor-Insumo</a>
+        </li>
+        <li class="Item-menu">
+            <a href="/html/cliente.html" class="link-menu-redireccion nav-link">Clientes</a>
+        </li>
+    </ul>
+</nav>
+<div class="margen1"><img src="/imagenes/Industtrias.png" alt="" width="1550px" height="400px"></div>
+
+    <div class="form-container">
+        <div class="header">
+            <h2>REGISTRO ORDEN DE TRABAJO</h2>
+            <form class="search-form">
+                <input type="text" id="search" name="search" placeholder="Buscar...">
+                <button type="button">Buscar</button>
+            </form>
+        </div>
+        
+        <!-- Table for displaying the header -->
+        <table class="header-table">
+            <thead>
+                <tr>
+                    <th>Número de Orden</th>
+                    <th>Operario</th>
+                    <th>Máquina</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-inventario">
+                <!-- Aquí se generará dinámicamente la tabla -->
+            </tbody>
+        </table>
+
+        <!-- Actions buttons -->
+        <div class="actions">
+            <button type="button">Buscar Orden</button>
+            <button type="button">Modificar</button>
+        </div>
+        
+    </div>
+
+    <script>
+        // Simulación de datos de inventario (formato JSON)
+        var inventario = [
+            {
+                "numero_orden": "001",
+                "operario": "Juan Pérez",
+                "maquina": "Máquina A",
+                "estado": "En Proceso"
+            },
+            {
+                "numero_orden": "002",
+                "operario": "María López",
+                "maquina": "Máquina B",
+                "estado": "Completada"
+            }
+            // Puedes añadir más elementos según sea necesario
+        ];
+
+        // Función para generar la tabla de inventario
+        function generarTablaInventario() {
+            var tabla = '';
+
+            for (var i = 0; i < inventario.length; i++) {
+                tabla += '<tr>';
+                tabla += '<td>' + inventario[i].numero_orden + '</td>';
+                tabla += '<td>' + inventario[i].operario + '</td>';
+                tabla += '<td>' + inventario[i].maquina + '</td>';
+                tabla += '<td>' + inventario[i].estado + '</td>';
+                tabla += '</tr>';
+            }
+
+            document.getElementById('tabla-inventario').innerHTML = tabla;
+        }
+
+        // Llamar a la función para generar la tabla al cargar la página
+        window.onload = function() {
+            generarTablaInventario();
+        };
+    </script>
+</body>
+</html>
